@@ -32,7 +32,7 @@ The author of the idea and the first version of Belyakov Igor aka OldHank.
 Everything should work without problems, if you have errors let me know, i will try to fix it.  
 All the best.
 
-#### Русское описание
+#### Русское описание:
 
 Моя версия Conky пресета, адаптированная в первую очередь под Manjaro Linux.  
 Автор идеи и первой версии Игорь Беляков aka OldHank.
