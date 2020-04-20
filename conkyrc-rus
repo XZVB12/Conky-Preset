@@ -84,7 +84,7 @@ ${font StyleBats:size=20}j${font}${voffset -6} Активно: ${alignr} $swappe
 #=== HDD Section ==============================================================================================================================
 ${hr}
 ${font Cadillac Sans:weight=bold:size=10}${voffset -2} >>Диски<< ${voffset 4}
-Системный раздел: ${fs_size /} $fs_type
+Системный раздел: ${alignr} ${fs_size /} $fs_type
 ${font StyleBats:size=20}A${voffset -6}${goto 35}${font} Root: ${fs_used_perc /}% ${alignr} ${fs_bar 5,97 /} ${voffset 5}
 ${font StyleBats:size=20}A${voffset -6}${goto 35}${font} Home: ${fs_used_perc /home}% ${alignr} ${fs_bar 5,97 /home} ${voffset 5}
 ${font StyleBats:size=20}A${voffset -6}${goto 35}${font} Свободно: ${alignr} ${fs_free /} ${voffset 5}
