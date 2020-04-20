@@ -29,6 +29,7 @@ The author of the idea and the first version of Belyakov Igor aka OldHank.
 - [ ] Deal with fonts
 - [ ] Fix minimizing widget when clicking the "Show Desktop" button
 - [ ] Delete unnecessary fragments (Blanks)
+- [ ] Add support for 2 or more monitors
 
 Everything should work without problems, if you have errors let me know, i will try to fix it.  
 All the best.
@@ -62,6 +63,7 @@ All the best.
 - [ ] Разобраться со шрифтами
 - [ ] Постараться исправить сворачивание виджета при нажатии кнопки "Показать рабочий стол"
 - [ ] Удалить ненужные фрагменты (не реализованные заготовки)
+- [ ] Добавить поддержку 2-х и более мониторов
 
 Всё должно работать "из коробки", но если у вас возникли проблемы дайте мне знать, постараюсь исправить.  
 Всего наилучшего.
