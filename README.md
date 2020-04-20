@@ -21,7 +21,7 @@ The author of the idea and the first version of Belyakov Igor aka OldHank.
 * If you have more or less than 4 processor cores, you need to duplicate the line `${font StyleBats:size=20}E${font}${voffset -6} CPU4: ${cpu cpu4}% ${alignr} ${cpubar cpu4 6,97} ${voffset 5}` increasing digits for example `${font StyleBats:size=20}E${font}${voffset -6} CPU4: ${cpu cpu4}% ${alignr} ${cpubar cpu4 6,97} ${voffset 5}` for 5 cores. Or comment out unnecessary lines, for example `#${font StyleBats:size=20}E${font}${voffset -6} CPU4: ${cpu cpu4}% ${alignr} ${cpubar cpu4 6,97} ${voffset 5}`
 * Lines starting with `#` are comments
 * Do not forget to change the name of the network interface
-* If you want to change the distribution logo, edit the line `${image $HOME/.conky/ARCH-V-3/img/avatar.png -p 0,4 -s 40x40} ${voffset -5}` , changing the path to the image. 256x256 images with transparent background are recommended.
+* If you want to change the distribution logo, edit the line `${image $HOME/.conky/ARCH-V-3/img/Manjaro.png -p 0,4 -s 40x40} ${voffset -5}` , changing the path to the image , for example `${image $HOME/.conky/ARCH-V-3/img/arch.png -p 0,4 -s 40x40} ${voffset -5}`. 256x256 images with transparent background are recommended.
 
 #### TO DO:
 - [X] Make English version
@@ -53,7 +53,7 @@ All the best.
 * Если у вас больше, чем 4 ядра процессора, вам нужно дублировать строку `${font StyleBats:size=20}E${font}${voffset -6} CPU4: ${cpu cpu4}% ${alignr} ${cpubar cpu4 6,97} ${voffset 5}` увеличивая номер ядра, например `${font StyleBats:size=20}E${font}${voffset -6} CPU4: ${cpu cpu4}% ${alignr} ${cpubar cpu4 6,97} ${voffset 5}` для 5 ядер. Или за комментировать ненужные строки, если у вас менее 4-х ядер, например `#${font StyleBats:size=20}E${font}${voffset -6} CPU4: ${cpu cpu4}% ${alignr} ${cpubar cpu4 6,97} ${voffset 5}`
 * Строка начинающаяся с `#` является комментарием
 * Не забудьте изменить название своего сетевого интерфейса
-* Если вы хотите изменить логотип дистрибутива, отредактируйте строку `${image $HOME/.conky/ARCH-V-3/img/avatar.png -p 0,4 -s 40x40} ${voffset -5}` , изменив путь до нового изображения. Рекомендуются изображения с расширением 256x256 и прозрачным фоном.
+* Если вы хотите изменить логотип дистрибутива, отредактируйте строку `${image $HOME/.conky/ARCH-V-3/img/Manjaro.png -p 0,4 -s 40x40} ${voffset -5}` , изменив путь до нового изображения, например `${image $HOME/.conky/ARCH-V-3/img/arch.png -p 0,4 -s 40x40} ${voffset -5}`. Рекомендуются изображения с расширением 256x256 и прозрачным фоном.
 
 #### Сделать:
 - [X] Сделать Англоязычную версию
