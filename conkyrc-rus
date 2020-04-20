@@ -75,12 +75,12 @@ t° Процессора: $alignr ${acpitemp}°C ${voffset -5}
 #=== Memory ======================================================================================================================
 ${hr}
 ${font StyleBats:size=20}g${font}${voffset -6} ОЗУ: $memperc% ${alignr} ${membar 6,97} ${voffset 5}
-${font StyleBats:size=20}g${font}${voffset -6} Всего ОЗУ: ${alignr} $memmax ${alignr} ${voffset 5}
-${font StyleBats:size=20}g${font}${voffset -6} ОЗУ Использованно: $mem ${alignr} ${voffset 5}
+${font StyleBats:size=20}g${font}${voffset -6} Всего ОЗУ: ${alignr} $memmax ${voffset 5}
+${font StyleBats:size=20}g${font}${voffset -6} ОЗУ Использованно: ${alignr} $mem ${voffset 5}
 ${font StyleBats:size=20}g${font}${voffset -6} ОЗУ доступно: $alignr $memeasyfree ${voffset 5}
-${font StyleBats:size=20}j${font}${voffset -6} Объём SWAP: $swapmax ${voffset 5}
-${font StyleBats:size=20}j${font}${voffset -6} Использованно: $swap ${voffset 5}
-${font StyleBats:size=20}j${font}${voffset -6} Активно: $swapperc% ${alignr} ${swapbar 6,97} ${voffset 1}
+${font StyleBats:size=20}j${font}${voffset -6} Объём SWAP: ${alignr} $swapmax ${voffset 5}
+${font StyleBats:size=20}j${font}${voffset -6} Использованно: ${alignr} $swap ${voffset 5}
+${font StyleBats:size=20}j${font}${voffset -6} Активно: ${alignr} $swapperc% ${swapbar 6,97} ${voffset 1}
 #=== HDD Section ==============================================================================================================================
 ${hr}
 ${font Cadillac Sans:weight=bold:size=10}${voffset -2} >>Диски<< ${voffset 4}

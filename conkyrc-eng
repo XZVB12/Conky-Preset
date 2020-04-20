@@ -76,11 +76,11 @@ t° CPU: $alignr ${acpitemp}°C ${voffset -5}
 ${hr}
 ${font StyleBats:size=20}g${font}${voffset -6} RAM: $memperc% ${alignr} ${membar 6,97} ${voffset 5}
 ${font StyleBats:size=20}g${font}${voffset -6} Total RAM: ${alignr} $memmax ${alignr} ${voffset 5}
-${font StyleBats:size=20}g${font}${voffset -6} Use RAM: $mem ${alignr} ${voffset 5}
+${font StyleBats:size=20}g${font}${voffset -6} Use RAM: ${alignr} $mem ${voffset 5}
 ${font StyleBats:size=20}g${font}${voffset -6} Available RAM: $alignr $memeasyfree ${voffset 5}
-${font StyleBats:size=20}j${font}${voffset -6} Volume SWAP: $swapmax ${voffset 5}
-${font StyleBats:size=20}j${font}${voffset -6} Use SWAP: $swap ${voffset 5}
-${font StyleBats:size=20}j${font}${voffset -6} Actively: $swapperc% ${alignr} ${swapbar 6,97} ${voffset 1}
+${font StyleBats:size=20}j${font}${voffset -6} Volume SWAP: ${alignr} $swapmax ${voffset 5}
+${font StyleBats:size=20}j${font}${voffset -6} Use SWAP: ${alignr} $swap ${voffset 5}
+${font StyleBats:size=20}j${font}${voffset -6} Actively: ${alignr} $swapperc% ${swapbar 6,97} ${voffset 1}
 #=== HDD Section ==============================================================================================================================
 ${hr}
 ${font Cadillac Sans:weight=bold:size=10}${voffset -2} >>Disk<< ${voffset 4}
