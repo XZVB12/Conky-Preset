@@ -75,7 +75,7 @@ t° CPU: $alignr ${acpitemp}°C ${voffset -5}
 #=== Memory ======================================================================================================================
 ${hr}
 ${font StyleBats:size=20}g${font}${voffset -6} RAM: $memperc% ${alignr} ${membar 6,97} ${voffset 5}
-${font StyleBats:size=20}g${font}${voffset -6} Total RAM: ${alignr} $memmax ${alignr} ${voffset 5}
+${font StyleBats:size=20}g${font}${voffset -6} Total RAM: ${alignr} $memmax ${voffset 5}
 ${font StyleBats:size=20}g${font}${voffset -6} Use RAM: ${alignr} $mem ${voffset 5}
 ${font StyleBats:size=20}g${font}${voffset -6} Available RAM: $alignr $memeasyfree ${voffset 5}
 ${font StyleBats:size=20}j${font}${voffset -6} Volume SWAP: ${alignr} $swapmax ${voffset 5}
