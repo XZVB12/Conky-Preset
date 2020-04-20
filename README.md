@@ -11,7 +11,7 @@ The author of the idea and the first version of Belyakov Igor aka OldHank.
 * Fixed values are changed to variables to work correctly on most systems without changing the code. (e.g. host name, distribution name, version, DE name)
 
 #### Installation:
-* Copy project files (conkyrc and folders) to the $HOME/.conky/ARCH-V-3/ folder
+* Copy project files (conkyrc and folders) to the $HOME/.conky/ARCH-V-3/
 * Enable using Conky Manager
 * Enjoy
 
