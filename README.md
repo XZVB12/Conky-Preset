@@ -22,6 +22,7 @@ The author of the idea and the first version of Belyakov Igor aka OldHank.
 * Lines starting with `#` are comments
 * Do not forget to change the name of the network interface
 * If you want to change the distribution logo, edit the line `${image $HOME/.conky/ARCH-V-3/img/Manjaro.png -p 0,4 -s 40x40} ${voffset -5}` , changing the path to the image , for example `${image $HOME/.conky/ARCH-V-3/img/arch.png -p 0,4 -s 40x40} ${voffset -5}`. 256x256 images with transparent background are recommended.
+* To change the color, edit the line `default_color 00c5ff` and replace the value` 00c5ff` with any color Hex code of your choice.
 
 #### TO DO:
 - [X] Make English version
@@ -54,6 +55,7 @@ All the best.
 * Строка начинающаяся с `#` является комментарием
 * Не забудьте изменить название своего сетевого интерфейса
 * Если вы хотите изменить логотип дистрибутива, отредактируйте строку `${image $HOME/.conky/ARCH-V-3/img/Manjaro.png -p 0,4 -s 40x40} ${voffset -5}` , изменив путь до нового изображения, например `${image $HOME/.conky/ARCH-V-3/img/arch.png -p 0,4 -s 40x40} ${voffset -5}`. Рекомендуются изображения с расширением 256x256 и прозрачным фоном.
+* Для изменения цвета необходимо отредактировать строку `default_color 00c5ff` и заменить значение `00c5ff` на любой цветовой Hex код по выбору.
 
 #### Сделать:
 - [X] Сделать Англоязычную версию
@@ -65,4 +67,4 @@ All the best.
 Всего наилучшего.
 
 #### Work example / Пример работы:
-![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot.png) ![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot-En.png)
+![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot.png) ![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot-En.png)  ![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot-blue.png)
