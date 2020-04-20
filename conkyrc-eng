@@ -56,7 +56,7 @@ override_utf8_locale yes
 use_spacer none
 #===Text=================================================
 TEXT
-${image $HOME/.conky/ARCH-V-3/img/avatar.png -p 0,4 -s 40x40} ${voffset -5}
+${image $HOME/.conky/ARCH-V-3/img/Manjaro.png -p 0,4 -s 40x40} ${voffset -5}
 ${alignc}${font Univers Condensed Bold:bold:size=10}${goto 70} ${execi 108000 echo $(awk -F'=' '/^NAME=/ {print $2}' /etc/os-release | tr -d '"')} ${font} ${voffset -5}
 ${voffset 10}${font Ubuntu:bold:size=11}${goto 157} ${execi 108000 echo $(lsb_release -sr)} ${voffset -2}
 ${font Cadillac Sans:bold:size=15} ${time %H:%M:%S} ${font} ${voffset -4} ${font Ubuntu:bold:size=10} ${goto 160} $DESKTOP_SESSION ${voffset 3} ${font}
