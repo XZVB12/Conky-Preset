@@ -69,18 +69,18 @@ ${font StyleBats:size=20}E${font}${voffset -6} CPU1: ${cpu cpu1}% ${alignr} ${cp
 ${font StyleBats:size=20}E${font}${voffset -6} CPU2: ${cpu cpu2}% ${alignr} ${cpubar cpu2 6,97} ${voffset 5}
 ${font StyleBats:size=20}E${font}${voffset -6} CPU3: ${cpu cpu3}% ${alignr} ${cpubar cpu3 6,97} ${voffset 5}
 ${font StyleBats:size=20}E${font}${voffset -6} CPU4: ${cpu cpu4}% ${alignr} ${cpubar cpu4 6,97} ${voffset 5}
-${font StyleBats:size=20}E${font}${voffset -6} Общее CPU: ${alignr} ${cpu}% / GHz: $freq_g ${voffset 7}
+${font StyleBats:size=20}E${font}${voffset -6} Общее CPU: ${alignr} ${cpu}% / GHz: $freq_g ${voffset 5}
 #=== CPU TEMP ====================================================================================================================
-t° Процессора: $alignr ${acpitemp}°C
+t° Процессора: $alignr ${acpitemp}°C ${voffset -5}
 #=== Memory ======================================================================================================================
 ${hr}
 ${font StyleBats:size=20}g${font}${voffset -6} ОЗУ: $memperc% ${alignr} ${membar 6,97} ${voffset 5}
-${font StyleBats:size=20}g${font}${voffset -6} Всего ОЗУ: ${alignr} $memmax ${alignr}
-${font StyleBats:size=20}g${font}${voffset -6} ОЗУ Использованно: $mem ${alignr}
-${font StyleBats:size=20}g${font}${voffset -6} ОЗУ доступно: $alignr $memeasyfree
-${font StyleBats:size=20}j${font}${voffset -6} Объём SWAP: $swapmax
-${font StyleBats:size=20}j${font}${voffset -6} Использованно: $swap
-${font StyleBats:size=20}j${font}${voffset -6} Активно: $swapperc% ${alignr} ${swapbar 6,97} ${voffset 3}
+${font StyleBats:size=20}g${font}${voffset -6} Всего ОЗУ: ${alignr} $memmax ${alignr} ${voffset 5}
+${font StyleBats:size=20}g${font}${voffset -6} ОЗУ Использованно: $mem ${alignr} ${voffset 5}
+${font StyleBats:size=20}g${font}${voffset -6} ОЗУ доступно: $alignr $memeasyfree ${voffset 5}
+${font StyleBats:size=20}j${font}${voffset -6} Объём SWAP: $swapmax ${voffset 5}
+${font StyleBats:size=20}j${font}${voffset -6} Использованно: $swap ${voffset 5}
+${font StyleBats:size=20}j${font}${voffset -6} Активно: $swapperc% ${alignr} ${swapbar 6,97} ${voffset 1}
 #=== HDD Section ==============================================================================================================================
 ${hr}
 ${font Cadillac Sans:weight=bold:size=10}${voffset -2} >>Диски<< ${voffset 4}
@@ -88,7 +88,7 @@ ${font Cadillac Sans:weight=bold:size=10}${voffset -2} >>Диски<< ${voffset 
 ${font StyleBats:size=20}A${voffset -6}${goto 35}${font} Root: ${fs_used_perc /}% ${alignr} ${fs_bar 5,97 /} ${voffset 5}
 ${font StyleBats:size=20}A${voffset -6}${goto 35}${font} Home: ${fs_used_perc /home}% ${alignr} ${fs_bar 5,97 /home} ${voffset 5}
 ${font StyleBats:size=20}A${voffset -6}${goto 35}${font} Свободно: ${alignr} ${fs_free /} ${voffset 5}
-${font StyleBats:size=20}M${voffset -6}${goto 35}${font} I/O: ${diskio} $color ${alignr} ${diskiograph 15,97} ${voffset 6}
+${font StyleBats:size=20}M${voffset -6}${goto 35}${font} I/O: ${diskio} $color ${alignr} ${diskiograph 15,97} ${voffset 4}
 #=== Доделать ==============================================================================================================================
 #SDA $alignr ${hddtemp /dev/sda}°C
 #SDB $alignr ${hddtemp /dev/sdb}°C
@@ -98,14 +98,14 @@ ${font StyleBats:size=20}M${voffset -6}${goto 35}${font} I/O: ${diskio} $color $
 #$diskio_write(/dev/sda) #Доделать ввод/вывод под остальные диски
 #=== Internet Section ==========================================================================================================================
 ${hr}
-${font Cadillac Sans:weight=bold:size=10} >>Сеть<< ${font} ${voffset 5}
+${font Cadillac Sans:weight=bold:size=10} >>Сеть<< ${font} ${voffset 2}
 ${font PizzaDude Bullets:size=14}U${font} Down: ${downspeed enp5s0 } ${voffset 0} ${alignr} ${downspeedgraph enp5s0 15,97 black black} ${voffset 5}
-${font PizzaDude Bullets:size=14}O${font} Up: ${upspeed enp5s0 } ${voffset 0} ${alignr} ${upspeedgraph enp5s0 15,97 black black} ${voffset 5}
+${font PizzaDude Bullets:size=14}O${font} Up: ${upspeed enp5s0 } ${voffset 0} ${alignr} ${upspeedgraph enp5s0 15,97 black black} ${voffset 1}
 ${voffset 4}${font PizzaDude Bullets:size=14}T${font} Download: ${alignr} ${totaldown enp5s0}
 ${voffset 4}${font PizzaDude Bullets:size=14}N${font} Upload: ${alignr} ${totalup enp5s0} ${voffset 6}
 ${font} Локальный IP: ${alignr} ${addr enp5s0}
-${font} Публичный IP: ${alignr} ${execi 3600 wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'}
-#${if_existing /proc/net/route enp1s0f0 } # настройки wifi
+${font} Публичный IP: ${alignr} ${execi 3600 wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'} ${voffset -5}
+#${if_existing /proc/net/route enp1s0f0 } # Настройки WiFi
 #=== Top Processes CPU ========================================================================================================================
 ${hr}
 ${font Cadillac Sans:weight=bold:size=10} >>Топ процессов по CPU<< ${font}
@@ -128,4 +128,3 @@ ${font Cadillac Sans:weight=bold:size=10} >>Топ процессов по ОЗ�
 6. ${top_mem name 6}     ${alignr} ${top_mem pid 6}   ${alignr} ${top_mem mem 6} ${voffset -5}
 ${hr}
 # THE END ;)
-
