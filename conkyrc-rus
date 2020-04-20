@@ -37,7 +37,7 @@ border_margin 5
 border_width 3
 #====================================================
 #Default colors and also border colors
-default_color 22ff00
+default_color 00c5ff #22ff00 Смена цвета Голубой / Зелёный
 #default_shade_color black
 #default_outline_color grey
 own_window_colour 000000
