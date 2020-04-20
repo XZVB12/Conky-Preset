@@ -24,10 +24,10 @@ The author of the idea and the first version of Belyakov Igor aka OldHank.
 * If you want to change the distribution logo, edit the line `${image $HOME/.conky/ARCH-V-3/img/avatar.png -p 0,4 -s 40x40} ${voffset -5}` , changing the path to the image. 256x256 images with transparent background are recommended.
 
 #### TO DO:
-* - [ ] Make English version
-* - [ ] Deal with fonts
-* - [ ] Fix minimizing widget when clicking the "Show Desktop" button
-* - [ ] Delete unnecessary fragments (Blanks)
+- [X] Make English version
+- [ ] Deal with fonts
+- [ ] Fix minimizing widget when clicking the "Show Desktop" button
+- [ ] Delete unnecessary fragments (Blanks)
 
 Everything should work without problems, if you have errors let me know, i will try to fix it.  
 All the best.
@@ -56,13 +56,13 @@ All the best.
 * Если вы хотите изменить логотип дистрибутива, отредактируйте строку `${image $HOME/.conky/ARCH-V-3/img/avatar.png -p 0,4 -s 40x40} ${voffset -5}` , изменив путь до нового изображения. Рекомендуются изображения с расширением 256x256 и прозрачным фоном.
 
 #### Сделать:
-* - [ ] Сделать Англоязычную версию
-* - [ ] Разобраться со шрифтами
-* - [ ] Постараться исправить сворачивание виджета при нажатии кнопки "Показать рабочий стол"
-* - [ ] Удалить ненужные фрагменты (не реализованные заготовки)
+- [X] Сделать Англоязычную версию
+- [ ] Разобраться со шрифтами
+- [ ] Постараться исправить сворачивание виджета при нажатии кнопки "Показать рабочий стол"
+- [ ] Удалить ненужные фрагменты (не реализованные заготовки)
 
 Всё должно работать "из коробки", но если у вас возникли проблемы дайте мне знать, постараюсь исправить.  
 Всего наилучшего.
 
 #### Work example / Пример работы:
-![Image](https://github.com/XZVB12/Conky-Manjaro-Linux-Edition/raw/master/ScreenShot.png)
+![Image](https://github.com/XZVB12/Conky-Manjaro-Linux-Edition/raw/master/ScreenShot.png) ![Image](https://github.com/XZVB12/Conky-Manjaro-Linux-Edition/raw/master/ScreenShot-En.png)
