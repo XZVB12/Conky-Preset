@@ -69,4 +69,4 @@ All the best.
 Всего наилучшего.
 
 #### Work example / Пример работы:
-![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot.png) ![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot-En.png) ![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot-Blue.png) ![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot-Blue-En.png)
+![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot-RU.png) ![Image](https://github.com/XZVB12/Conky-Preset/raw/master/ScreenShot-EN.png)
