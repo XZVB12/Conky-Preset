@@ -27,7 +27,7 @@ total_run_times 0
 update_interval 0.7
 # Minimum size of text area
 minimum_size 270 0
-maximum_width 230
+maximum_width 260
 draw_shades no
 draw_outline no
 draw_borders no
@@ -57,13 +57,12 @@ use_spacer none
 #===Text=================================================
 TEXT
 ${image $HOME/.conky/ARCH-V-3/img/Manjaro.png -p 0,4 -s 40x40} ${voffset -5}
-${alignc}${font Univers Condensed Bold:bold:size=10}${goto 70} ${execi 108000 echo $(awk -F'=' '/^NAME=/ {print $2}' /etc/os-release | tr -d '"')} ${font} ${voffset -5}
-${voffset 10}${font Ubuntu:bold:size=11}${goto 157} ${execi 108000 echo $(lsb_release -sr)} ${voffset -2}
-${font Cadillac Sans:bold:size=15} ${time %H:%M:%S} ${font} ${voffset -4} ${font Ubuntu:bold:size=10} ${goto 160} $DESKTOP_SESSION ${voffset 3} ${font}
-${font Cadillac Sans:size=10} ${voffset 2} ${alignc} ${time %A, %d %B %Y} ${font}
+${alignc}${font Univers Condensed Bold:bold:size=10} ${goto 70} ${execi 108000 echo $(awk -F'=' '/^NAME=/ {print $2}' /etc/os-release | tr -d '"')} ${execi 108000 echo $(lsb_release -sr)} $DESKTOP_SESSION ${font} ${voffset -5}
+${voffset 10}${font Ubuntu:bold:size=11}${goto 157} ${voffset -2}
+${font Cadillac Sans:bold:size=15} ${time %H:%M:%S} ${font} ${voffset -4} ${font Cadillac Sans:size=10} ${voffset 2} ${alignc} ${goto 95} ${time %A, %d %B %Y}
 ${font OpenLogos:size=20}t${font} Kernel: ${alignr} ${kernel} ${machine}
 ${font StyleBats:size=18}q${font}${voffset -5} Up Time: ${alignr} ${uptime} ${voffset 7}
-${font CadillacSans-Bold:size=11} Host Name: ${nodename} ${voffset -5}
+${font CadillacSans-Bold:size=11} Host Name: ${alignr} ${nodename} ${voffset -5}
 ${hr}
 ${font StyleBats:size=20}E${font}${voffset -6} CPU1: ${cpu cpu1}% ${alignr} ${cpubar cpu1 6,97} ${voffset 5}
 ${font StyleBats:size=20}E${font}${voffset -6} CPU2: ${cpu cpu2}% ${alignr} ${cpubar cpu2 6,97} ${voffset 5}
@@ -109,7 +108,7 @@ ${font} Public IP: ${alignr} ${execi 3600 wget -q -O - checkip.dyndns.org|sed -e
 #=== Top Processes CPU ========================================================================================================================
 ${hr}
 ${font Cadillac Sans:weight=bold:size=10} >>Top Processes by CPU<< ${font}
-NAME ${goto 140} PID    CPU%    MEM%
+NAME ${goto 140} ${alignr}  PID    CPU% RAM%
 1.${offset 4}${top name 1} ${goto 140} ${top pid 1} ${top cpu 1}  ${top mem 1}
 2.${offset 4}${top name 2} ${goto 140} ${top pid 2} ${top cpu 2}  ${top mem 2}
 3.${offset 4}${top name 3} ${goto 140} ${top pid 3} ${top cpu 3}  ${top mem 3}
@@ -119,12 +118,12 @@ NAME ${goto 140} PID    CPU%    MEM%
 #=== Top processes memory ======================================================================================================================
 ${hr}
 ${font Cadillac Sans:weight=bold:size=10} >>Top Processes by RAM<< ${font}
-NAME               ${alignr}ID      ${alignr} MEM $color
-1. ${top_mem name 1}     ${alignr} ${top_mem pid 1}   ${alignr} ${top_mem mem 1}
-2. ${top_mem name 2}     ${alignr} ${top_mem pid 2}   ${alignr} ${top_mem mem 2}
-3. ${top_mem name 3}     ${alignr} ${top_mem pid 3}   ${alignr} ${top_mem mem 3}
-4. ${top_mem name 4}     ${alignr} ${top_mem pid 4}   ${alignr} ${top_mem mem 4}
-5. ${top_mem name 5}     ${alignr} ${top_mem pid 5}   ${alignr} ${top_mem mem 5}
-6. ${top_mem name 6}     ${alignr} ${top_mem pid 6}   ${alignr} ${top_mem mem 6} ${voffset -5}
+NAME               ${alignr} ${goto 180} PID      RAM%
+1. ${top_mem name 1}     ${goto 140} ${alignr} ${top_mem pid 1}   ${alignr} ${top_mem mem 1}
+2. ${top_mem name 2}     ${goto 140} ${alignr} ${top_mem pid 2}   ${alignr} ${top_mem mem 2}
+3. ${top_mem name 3}     ${goto 140} ${alignr} ${top_mem pid 3}   ${alignr} ${top_mem mem 3}
+4. ${top_mem name 4}     ${goto 140} ${alignr} ${top_mem pid 4}   ${alignr} ${top_mem mem 4}
+5. ${top_mem name 5}     ${goto 140} ${alignr} ${top_mem pid 5}   ${alignr} ${top_mem mem 5}
+6. ${top_mem name 6}     ${goto 140} ${alignr} ${top_mem pid 6}   ${alignr} ${top_mem mem 6} ${voffset -5}
 ${hr}
 # THE END ;)
