@@ -76,9 +76,10 @@ ${hr}
 ${font StyleBats:size=20}g${font}${voffset -6} ОЗУ: $memperc% ${alignr} ${membar 6,97} ${voffset 5}
 ${font StyleBats:size=20}g${font}${voffset -6} Всего ОЗУ: ${alignr} $memmax ${voffset 5}
 ${font StyleBats:size=20}g${font}${voffset -6} ОЗУ Использованно: ${alignr} $mem ${voffset 5}
-${font StyleBats:size=20}g${font}${voffset -6} ОЗУ доступно: $alignr $memeasyfree ${voffset 5}
+${font StyleBats:size=20}g${font}${voffset -6} ОЗУ Свободно: $alignr $memeasyfree ${voffset 5}
 ${font StyleBats:size=20}j${font}${voffset -6} Объём SWAP: ${alignr} $swapmax ${voffset 5}
 ${font StyleBats:size=20}j${font}${voffset -6} Использованно SWAP: ${alignr} $swap ${voffset 5}
+${font StyleBats:size=20}j${font}${voffset -6} Свободно SWAP: ${alignr} $swapfree ${voffset 5}
 ${font StyleBats:size=20}j${font}${voffset -6} Активно SWAP: $swapperc% ${alignr} ${swapbar 6,97} ${voffset 1}
 #=== HDD Section ==============================================================================================================================
 ${hr}
