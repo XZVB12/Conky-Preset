@@ -122,7 +122,7 @@ NAME ${goto 140} ${alignr}  PID    CPU% RAM%
 #=== Top processes memory ======================================================================================================================
 ${hr}
 ${font Cadillac Sans:weight=bold:size=10} >>Top Processes by RAM<< ${font}
-NAME               ${alignr} ${goto 190} PID      RAM%
+NAME               ${alignr} ${goto 197} PID      RAM%
 1. ${top_mem name 1}     ${goto 140} ${alignr} ${top_mem pid 1}   ${alignr} ${top_mem mem 1}
 2. ${top_mem name 2}     ${goto 140} ${alignr} ${top_mem pid 2}   ${alignr} ${top_mem mem 2}
 3. ${top_mem name 3}     ${goto 140} ${alignr} ${top_mem pid 3}   ${alignr} ${top_mem mem 3}
