@@ -54,7 +54,7 @@ conky.text = [[
 ${image $HOME/.conky/ARCH-V-3/img/Manjaro.png -p 4,4 -s 40x40} ${voffset -5}
 ${alignc}${font Univers Condensed Bold:bold:size=10} ${goto 60} ${execi 108000 echo $(awk -F'=' '/^NAME=/ {print $2}' /etc/os-release | tr -d '"')} ${execi 108000 echo $(lsb_release -sr)} $DESKTOP_SESSION ${font} ${voffset -5}
 ${voffset 10}${font Ubuntu:bold:size=11}${goto 157} ${voffset -2}
-${font Cadillac Sans:bold:size=15} ${time %H:%M:%S} ${font} ${voffset -4} ${font Cadillac Sans:size=10} ${voffset 2} ${alignc} ${goto 135} ${time %A, %d %B %Y}
+${font Cadillac Sans:bold:size=15} ${time %H:%M:%S} ${font} ${voffset -4} ${font Cadillac Sans:size=10} ${voffset 2} ${alignc} ${goto 100} ${time %A, %d %B %Y}
 ${font OpenLogos:size=20}t${font} Ядро: ${alignr} ${kernel} ${machine}
 ${font StyleBats:size=18}q${font}${voffset -5} Время работы: ${alignr} ${uptime} ${voffset 7}
 ${font CadillacSans-Bold:size=11} Имя хоста: ${alignr} ${nodename} ${voffset -5}
